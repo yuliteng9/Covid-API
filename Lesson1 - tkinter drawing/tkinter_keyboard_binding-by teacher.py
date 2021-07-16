@@ -9,7 +9,6 @@ canvas.pack()
 circle = canvas.create_oval(100,200,130,230, fill='red')
 blue_rect = canvas.create_rectangle(50,50,70,80,fill ='blue')
 
-
 def move_circle(event):
     key = event.keysym
     if key == "Right":
