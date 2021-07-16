@@ -8,7 +8,8 @@ window = tk.Tk()
 window.geometry("800x400")
 window.title("Covid Stats")
 
-def show_data(country_name):
+def show_data():
+    country_name = country_entry.get()
     for index in response.json()["Countries"]:
     #response.json() is a dictionary, response.json()["Countries"] is the value of "Countries", which is a long list
     #this list consists of dictionaries, each dictionary contains the covid info of a country
@@ -23,7 +24,10 @@ def show_data(country_name):
             confirmed_label = tk.Label(window, font="Ariel 10", text="Total confirmed covid cases: " + str(total_confirmed))
             confirmed_label.pack()
 
-show_data("Canada")
+country_entry = tk.Entry(window)
+country_entry.pack()
+search_button = tk.Button(window, text="Search", command=show_data)
+search_button.pack()
 
 window.mainloop()
 
