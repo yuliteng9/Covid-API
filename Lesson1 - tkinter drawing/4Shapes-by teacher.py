@@ -6,7 +6,7 @@ window.title('Four Shapes Puzzle')
 canvas = Canvas(window, width=400, height=400)
 canvas.pack()
 
-circle = canvas.create_oval(100, 200, 130, 230, fill='yellow')
+circle = canvas.create_oval(100, 200, 130, 230, fill='gold')
 rect = canvas.create_rectangle(50, 50, 70, 80, fill='red')
 triangle = canvas.create_polygon(185, 65, 225, 50, 205, 30, fill='lime')
 arc = canvas.create_arc(300, 300, 350, 350, start=90, extent=75, fill='purple')
