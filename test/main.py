@@ -18,3 +18,4 @@ for index in response.json()["Countries"]:
 
 window.mainloop()
 
+print("I GET HERE!")  #It won't be shown on the screen until the window is closed
