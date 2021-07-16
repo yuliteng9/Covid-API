@@ -5,7 +5,6 @@ def convert():
         cm_string = str(int(inch_data.get())*2.54)
         cm_display.configure(text=cm_string)
 
-
 window = Tk()
 window.title('Inch to cm Converter')
 
