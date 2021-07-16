@@ -4,7 +4,7 @@ import tkinter as tk
 response = requests.get("http://api.covid19api.com/summary")
 
 window = tk.Tk()
-window.geometry("700x400")
+window.geometry("800x400")
 window.title("Covid Stats")
 
 def show_data():
