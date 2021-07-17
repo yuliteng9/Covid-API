@@ -8,7 +8,7 @@ try:
     message = json["Message"]
 except:
     quit("Turns out that there isn't a message in the correct response json.")
-if message == "Caching in Progress":
+if message == "Caching in progress":
     quit("API is currently unavailable due to caching in progress.")
 
 window = tk.Tk()
